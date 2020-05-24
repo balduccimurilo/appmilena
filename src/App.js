@@ -1,15 +1,11 @@
 import React from 'react';
-import Footer from './components/Footer';
-
-
 import Routes from './routes';
-
-import './global.css';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div>
-      <App />
+      <Home />
     </div>  
   );
 }
