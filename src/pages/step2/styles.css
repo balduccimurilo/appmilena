@@ -1,0 +1,16 @@
+.btn{
+  margin-top: 10px;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  transition: 0.4s;
+}
+
+
+.text-button {
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: cursive;
+  
+}
