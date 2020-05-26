@@ -13,9 +13,6 @@ import Step9 from './pages/step9';
 import Step10 from './pages/step10';
 import Step11 from './pages/step11';
 
-
-
-
 export default function Routes(){
     return(
         <BrowserRouter>
