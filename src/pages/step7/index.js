@@ -47,13 +47,13 @@ const useStyles = makeStyles((theme) => ({
     },
 
     text1: {
-        marginTop: "25px",
+        marginTop: "30px",
         justifyContent: "center",
         textAlign: "center", 
         marginBottom: "5px",
         fontFamily: "cursive",
-        fontSize: "55px",
-        fontWeight: "700",
+        fontSize: "18px",
+        fontWeight: "500",
         
      },
 
@@ -63,13 +63,14 @@ const useStyles = makeStyles((theme) => ({
        textAlign: "center", 
        marginBottom: "0px",
        fontFamily: "segoe UI emoji",
-       fontSize: "22px",
+       fontSize: "16px",
        fontWeight: "500",
        fontFamily: "cursive",
     },
 
     
     grid: {
+        direction: "row",
         justifyContent: "center",
         alignItems: "center",
         height: "100%",
@@ -78,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
 
     gridgap: {
         display: "grid",
-        gridRowGap: "10px",
+        gridRowGap: "20px",
     },
 
     gridItem: {
@@ -90,13 +91,12 @@ const useStyles = makeStyles((theme) => ({
         width: "15%",
         padding: "4",
         justifyContent: "flex-end",
-
     },
 
 
 }))
 
-export default function Home() {
+export default function Step7() {
 
     const classes = useStyles();
 
@@ -107,22 +107,21 @@ export default function Home() {
                 <Grid container direction="column" className={classes.gridgap}>
       
                         <Typography className={classes.text1}>
-                                    Oi meu amor! 
+                                    Meu amor, quero te dizer que sou muito grato por ter encontrado você.<br></br>
+                                    Você mudou a minha vida por completo e a tornou melhor.
                         </Typography>
 
                         <Typography className={classes.text}>
-                                    Tudo bem?
-                        </Typography>
-
-                        <Typography className={classes.text}>
-                                    Minha cartinha esse ano é digital, espero que goste. <FavoriteIcon></FavoriteIcon><br></br>
-                                    <a font-size="18px"> Instruções: Só clicar next quando terminar de ler.</a>
+                                    Fez alguns dos meus dias tristes mais felizes, dia após dia.<br></br>
+                                    Deixa minha vida cheia de prazer<br></br>
+                                    e com motivos para sorrir e sonhar cada dia mais.<br></br>                                    
+                                    Ainda mais sonhando juntos como estamos. (Casinha) <FavoriteIcon></FavoriteIcon>
                         </Typography>
                    
                     <Grid container className={classes.grid}>
                         <Grid item className={classes.gridItem} xs > 
 
-                                <Button size="small" color="#F5F1ED"  className={classes.margin} alignItems="center" component={Link} to="/step2">
+                                <Button size="small" color="#F5F1ED"  className={classes.margin} alignItems="center" component={Link} to="/step8">
                                     <a className="text-button" endIcon={<ArrowForwardIosIcon  style={{ fontSize: 12, marginLeft: 5 }} />}>Next</a>
                                     
                                 </Button>

@@ -47,12 +47,12 @@ const useStyles = makeStyles((theme) => ({
     },
 
     text1: {
-        marginTop: "25px",
+        marginTop: "30px",
         justifyContent: "center",
         textAlign: "center", 
         marginBottom: "5px",
         fontFamily: "cursive",
-        fontSize: "55px",
+        fontSize: "20px",
         fontWeight: "700",
         
      },
@@ -63,13 +63,14 @@ const useStyles = makeStyles((theme) => ({
        textAlign: "center", 
        marginBottom: "0px",
        fontFamily: "segoe UI emoji",
-       fontSize: "22px",
+       fontSize: "18px",
        fontWeight: "500",
        fontFamily: "cursive",
     },
 
     
     grid: {
+        direction: "row",
         justifyContent: "center",
         alignItems: "center",
         height: "100%",
@@ -78,7 +79,7 @@ const useStyles = makeStyles((theme) => ({
 
     gridgap: {
         display: "grid",
-        gridRowGap: "10px",
+        gridRowGap: "15px",
     },
 
     gridItem: {
@@ -90,13 +91,12 @@ const useStyles = makeStyles((theme) => ({
         width: "15%",
         padding: "4",
         justifyContent: "flex-end",
-
     },
 
 
 }))
 
-export default function Home() {
+export default function Step3() {
 
     const classes = useStyles();
 
@@ -107,22 +107,21 @@ export default function Home() {
                 <Grid container direction="column" className={classes.gridgap}>
       
                         <Typography className={classes.text1}>
-                                    Oi meu amor! 
+                                    Primeira passo:<br></br>
+                                    Respire, relaxe e sorria. <br></br>
                         </Typography>
 
                         <Typography className={classes.text}>
-                                    Tudo bem?
-                        </Typography>
-
-                        <Typography className={classes.text}>
-                                    Minha cartinha esse ano é digital, espero que goste. <FavoriteIcon></FavoriteIcon><br></br>
-                                    <a font-size="18px"> Instruções: Só clicar next quando terminar de ler.</a>
+                                    Tá chega de enrolação kkk<br></br>
+                                    Agora posso começar. <br></br>
+                                    E vou começar com um coisa que não sou bom, <br></br>
+                                    mas você é muito boa, vou começar com uma poesia. 
                         </Typography>
                    
                     <Grid container className={classes.grid}>
                         <Grid item className={classes.gridItem} xs > 
 
-                                <Button size="small" color="#F5F1ED"  className={classes.margin} alignItems="center" component={Link} to="/step2">
+                                <Button size="small" color="#F5F1ED"  className={classes.margin} alignItems="center" component={Link} to="/step4">
                                     <a className="text-button" endIcon={<ArrowForwardIosIcon  style={{ fontSize: 12, marginLeft: 5 }} />}>Next</a>
                                     
                                 </Button>

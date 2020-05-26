@@ -47,13 +47,13 @@ const useStyles = makeStyles((theme) => ({
     },
 
     text1: {
-        marginTop: "25px",
+        marginTop: "30px",
         justifyContent: "center",
         textAlign: "center", 
         marginBottom: "5px",
         fontFamily: "cursive",
-        fontSize: "55px",
-        fontWeight: "700",
+        fontSize: "20px",
+        fontWeight: "500",
         
      },
 
@@ -63,13 +63,14 @@ const useStyles = makeStyles((theme) => ({
        textAlign: "center", 
        marginBottom: "0px",
        fontFamily: "segoe UI emoji",
-       fontSize: "22px",
+       fontSize: "18px",
        fontWeight: "500",
        fontFamily: "cursive",
     },
 
     
     grid: {
+        direction: "row",
         justifyContent: "center",
         alignItems: "center",
         height: "100%",
@@ -90,13 +91,12 @@ const useStyles = makeStyles((theme) => ({
         width: "15%",
         padding: "4",
         justifyContent: "flex-end",
-
     },
 
 
 }))
 
-export default function Home() {
+export default function Step6() {
 
     const classes = useStyles();
 
@@ -107,22 +107,21 @@ export default function Home() {
                 <Grid container direction="column" className={classes.gridgap}>
       
                         <Typography className={classes.text1}>
-                                    Oi meu amor! 
+                                    Mas quando o amor é sincero ele vem com um grande amigo,<br></br>
+                                    e quando a amizade é concreta, ela é cheia de amor e carinho.<br></br>
+                                    Quando se tem um amor puro e real, pode sentir ambos<br></br>
+                                    coexistindo dentro do seu coração.
                         </Typography>
 
                         <Typography className={classes.text}>
-                                    Tudo bem?
-                        </Typography>
-
-                        <Typography className={classes.text}>
-                                    Minha cartinha esse ano é digital, espero que goste. <FavoriteIcon></FavoriteIcon><br></br>
-                                    <a font-size="18px"> Instruções: Só clicar next quando terminar de ler.</a>
+                                    Gostou amor ?<br></br>
+                                    Se sim, me da uma beijinho kkkkk
                         </Typography>
                    
                     <Grid container className={classes.grid}>
                         <Grid item className={classes.gridItem} xs > 
 
-                                <Button size="small" color="#F5F1ED"  className={classes.margin} alignItems="center" component={Link} to="/step2">
+                                <Button size="small" color="#F5F1ED"  className={classes.margin} alignItems="center" component={Link} to="/step7">
                                     <a className="text-button" endIcon={<ArrowForwardIosIcon  style={{ fontSize: 12, marginLeft: 5 }} />}>Next</a>
                                     
                                 </Button>

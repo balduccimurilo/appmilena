@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-
+import FavoriteIcon from '@material-ui/icons/Favorite';
 import Paper from '@material-ui/core/Paper';
 import { Grid, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
@@ -14,19 +14,21 @@ import './styles.css';
 const useStyles = makeStyles((theme) => ({
 
     margin: {
-        margin: theme.spacing(3),
-        marginBottom: "5px",
+        margin: theme.spacing(1),
     },
 
     root: {
         '& > *': {
             width: '100%',
             height: '100%',
+            alignContent: "center",
         },
     },
 
     container: {
-        padding:"15%",
+        paddingTop:"250px",
+        paddingLeft: "20%",
+        paddingRight: "20%",
         position: 'relative',
         backgroundColor: "#FEF2F2",
     },
@@ -45,12 +47,12 @@ const useStyles = makeStyles((theme) => ({
     },
 
     text1: {
-        marginTop: "25px",
+        marginTop: "30px",
         justifyContent: "center",
         textAlign: "center", 
         marginBottom: "5px",
         fontFamily: "cursive",
-        fontSize: "35px",
+        fontSize: "20px",
         fontWeight: "700",
         
      },
@@ -61,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
        textAlign: "center", 
        marginBottom: "0px",
        fontFamily: "segoe UI emoji",
-       fontSize: "22px",
+       fontSize: "18px",
        fontWeight: "500",
        fontFamily: "cursive",
     },
@@ -89,8 +91,6 @@ const useStyles = makeStyles((theme) => ({
         width: "15%",
         padding: "4",
         justifyContent: "flex-end",
-        paddingTop: "20px",
-
     },
 
 
@@ -107,21 +107,20 @@ export default function Home() {
                 <Grid container direction="column" className={classes.gridgap}>
       
                         <Typography className={classes.text1}>
-                                   Entao VAMOS LA
+                                    Farei do meu jeitinho nerd ! <FavoriteIcon fontSize="10px"></FavoriteIcon> <br></br>
+                                    Nesse dia tão especial você não imagina como estou me sentindo. <br></br>
                         </Typography>
 
                         <Typography className={classes.text}>
-                                    Tudo bem?
-                        </Typography>
-
-                        <Typography className={classes.text}>
-                                    Vamos começar?
+                                    Todos os anos eu tento te surpreender de um jeito diferente <br></br>
+                                    mas para mim esse ano é mais do que especial. <br></br>
+                                    Aposto que estou conseguindo te deixar surpresa kkkkk
                         </Typography>
                    
                     <Grid container className={classes.grid}>
                         <Grid item className={classes.gridItem} xs > 
 
-                                <Button size="small" color="#F5F1ED"  className={classes.margin} alignItems="center" component={Link} to="/">
+                                <Button size="small" color="#F5F1ED"  className={classes.margin} alignItems="center" component={Link} to="/step3">
                                     <a className="text-button" endIcon={<ArrowForwardIosIcon  style={{ fontSize: 12, marginLeft: 5 }} />}>Next</a>
                                     
                                 </Button>
